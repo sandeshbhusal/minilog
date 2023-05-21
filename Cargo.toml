@@ -1,0 +1,16 @@
+[workspace]
+members = [
+    "bin"
+]
+
+[workspace.dependencies]
+anyhow = "*"
+async-trait = "*"
+tokio = { version = "*", features = ["full"]}
+serde = { version = "*", features = ["derive"] }
+toml = { version = "*" }
+log = "*"
+env_logger = "*"
+clap = "*"
+thiserror = "*"
+crossbeam-channel = "*"

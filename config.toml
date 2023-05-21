@@ -1,0 +1,16 @@
+[modules.file_in]
+uses = "im_file"
+file_path = "/tmp/in"
+watch_interval = 1 
+
+[modules.file_out]
+uses = "om_file"
+file_path = "world"
+
+[modules.another_file_out]
+uses = "om_file"
+file_path = "another"
+
+[routes.default]
+from = ["file_in"]
+to = ["file_out", "another_file_out"]
